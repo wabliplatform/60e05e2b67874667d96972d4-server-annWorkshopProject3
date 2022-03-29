@@ -51,7 +51,7 @@ const getAllproject = () => new Promise(
   async (resolve, reject) => {
     try {
       let query = {}
-      query = await Project.find().populate(['pWorkpackage']).exec();
+      query = await Project.find().populate(['pWorkpackage','pDeliverable']).exec();
       resolve(Service.successResponse(query));
     } catch (e) {
       reject(Service.rejectResponse(
@@ -72,7 +72,7 @@ const getproject = ({ projectId }) => new Promise(
     try {
       let query = {};
       query = await Project.findById(projectId)
-      .populate(['pWorkpackage']).exec();
+      .populate(['pWorkpackage','pDeliverable']).exec();
       resolve(Service.successResponse({ query,}));
     } catch (e) {
       reject(Service.rejectResponse(

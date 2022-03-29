@@ -45,6 +45,17 @@ pDescription:String ,
   }
 
 ]
+, 
+
+
+
+ pDeliverable: [ 
+  {
+    type: Schema.Types.ObjectId,
+    ref:'deliverable'
+  }
+
+]
 
 
 
