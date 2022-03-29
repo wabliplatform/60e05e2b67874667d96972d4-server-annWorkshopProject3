@@ -4,6 +4,7 @@ README.md
 api/openapi.yaml
 config.js
 controllers/Controller.js
+controllers/DeliverableController.js
 controllers/EmployeeController.js
 controllers/ProjectController.js
 controllers/TaskController.js
@@ -12,6 +13,7 @@ controllers/index.js
 expressServer.js
 index.js
 logger.js
+models/Deliverable.js
 models/Employee.js
 models/Project.js
 models/ProjectPImage.js
@@ -20,6 +22,7 @@ models/Workpackage.js
 models/index.js
 mongooseDB.js
 package.json
+services/DeliverableService.js
 services/EmployeeService.js
 services/ProjectService.js
 services/Service.js
